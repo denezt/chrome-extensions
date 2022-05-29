@@ -1,0 +1,20 @@
+{
+    "name": "Template Extension",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "action" : {
+        "default_icon": "icon.png"
+    },
+    "background": {
+        "service_worker": "./src/background.js"
+    },
+    "permissions" : [
+        "activeTab", 
+        "unlimitedStorage"
+    ],
+    "host_permissions": [
+        "http://my-website.xyz/",
+        "*://*/*"
+    ],
+    "options_page": "options.html"
+}
